@@ -1,0 +1,292 @@
+{
+  "butterfly": {
+    "img": "assets/butterfly.png",
+    "shapes": {
+      "shape2": {
+        "shapeName": "kiss",
+        "a": 1.7,
+        "b": 0.7,
+        "m": 3,
+        "n1": 0.9,
+        "n2": 0.65,
+        "n3": 1.2,
+        "n": null,
+        "shapeScale": 0.6,
+        "shapeAngle": 45,
+        "repeat": 4
+      },
+      "shape0": {
+        "shapeName": "spiral",
+        "a": 0.75,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 1,
+        "shapeScale": 0.08,
+        "shapeAngle": 0,
+        "repeat": 3
+      },
+      "shape1": {
+        "shapeName": "superellipse",
+        "a": 1,
+        "b": 2,
+        "m": 4,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.36,
+        "shapeAngle": -45,
+        "repeat": 5
+      }
+    }
+  },
+  "bird": {
+    "img": "assets/bird.png",
+    "shapes": {
+      "shape1": {
+        "shapeName": "supershape",
+        "a": 1.7,
+        "b": 0.7,
+        "m": 3,
+        "n1": 0.9,
+        "n2": 0.65,
+        "n3": 1.2,
+        "n": null,
+        "shapeScale": 0.7,
+        "shapeAngle": 135,
+        "repeat": 3
+      },
+      "shape0": {
+        "shapeName": "cornuSpiral",
+        "a": 0.7, 
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 1,
+        "shapeScale": 0.7,
+        "shapeAngle": -45,
+        "repeat": 3
+      },
+      "shape2": {
+        "shapeName": "arc",
+        "a": 2,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.5,
+        "shapeAngle": 0,
+        "repeat": 3
+      }
+    }
+  },
+  "swirl": {
+    "img": "assets/swirl.png",
+    "shapes": {
+      "shape0": {
+        "shapeName": "spiral",
+        "a": 0.75,
+        "b": 0.7,
+        "m": 3,
+        "n1": 0.9,
+        "n2": 0.65,
+        "n3": 1.2,
+        "n": 1,
+        "shapeScale": 0.1,
+        "shapeAngle": 0,
+        "repeat": 2
+      },
+      "shape1": {
+        "shapeName": "polygon",
+        "a": null,
+        "b": null,
+        "m": 6,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.5,
+        "shapeAngle": 0,
+        "repeat": 4
+      },
+      "shape2": {
+        "shapeName": "spiral",
+        "a": 0.75,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0.5,
+        "shapeScale": 0.1,
+        "shapeAngle": 0,
+        "repeat": 2
+      }
+    }
+  },
+  "rose": {
+    "img": "assets/rose.png",
+    "shapes": {
+      "shape0": {
+        "shapeName": "flower",
+        "a": 2,
+        "b": 1,
+        "m": 8,
+        "n1": 0.9,
+        "n2": 0.65,
+        "n3": 1.2,
+        "n": 5,
+        "shapeScale": 0.4,
+        "shapeAngle": 30,
+        "repeat": 4
+      },
+      "shape1": {
+        "shapeName": "spiral",
+        "a": 0.75,
+        "b": 2,
+        "m": 3,
+        "n1": 1,
+        "n2": 1,
+        "n3": 1,
+        "n": 0.9,
+        "shapeScale": 0.1,
+        "shapeAngle": 0,
+        "repeat": 2
+      },
+      "shape2": {
+        "shapeName": "spiral",
+        "a": 0.75,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0.5,
+        "shapeScale": 0.1,
+        "shapeAngle": 0,
+        "repeat": 2
+      }
+    }
+  },
+  "fish": {
+    "img": "assets/fish.png",
+    "shapes": {
+      "shape3": {
+        "shapeName": "kiss",
+        "a": 2,
+        "b": 1,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.45,
+        "shapeAngle": 0,
+        "repeat": 4
+      },
+      "shape1": {
+        "shapeName": "spiral",
+        "a": 0.75,
+        "b": 2,
+        "m": 3,
+        "n1": 1,
+        "n2": 1,
+        "n3": 1,
+        "n": 0.9,
+        "shapeScale": 0.1,
+        "shapeAngle": 0,
+        "repeat": 2
+      },
+      "shape2": {
+        "shapeName": "arc",
+        "a": 2,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0.5,
+        "shapeScale": 0.5,
+        "shapeAngle": 0,
+        "repeat": 4
+      },
+      "shape0": {
+        "shapeName": "lissajous",
+        "a": -1,
+        "b": 2,
+        "m": 3,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.475,
+        "shapeAngle": -90,
+        "repeat": 3
+      }
+    }
+  },
+  "squirrel": {
+    "img": "assets/squirrel.png",
+    "shapes": {
+      "shape3": {
+        "shapeName": "kiss",
+        "a": 2,
+        "b": 1,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.45,
+        "shapeAngle": 0,
+        "repeat": 4
+      },
+      "shape1": {
+        "shapeName": "spiral",
+        "a": 0.75,
+        "b": 2,
+        "m": 3,
+        "n1": 1,
+        "n2": 1,
+        "n3": 1,
+        "n": 0.9,
+        "shapeScale": 0.1,
+        "shapeAngle": 0,
+        "repeat": 2
+      },
+      "shape2": {
+        "shapeName": "arc",
+        "a": 2,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0.5,
+        "shapeScale": 0.5,
+        "shapeAngle": 0,
+        "repeat": 4
+      },
+      "shape0": {
+        "shapeName": "lissajous",
+        "a": -1,
+        "b": 2,
+        "m": 3,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.5,
+        "shapeAngle": -90,
+        "repeat": 3
+      }
+    }
+  }
+}

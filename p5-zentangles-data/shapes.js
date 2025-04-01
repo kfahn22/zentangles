@@ -5,7 +5,7 @@ const e = 2.71828;
 class Shape {
   constructor() {}
 
-  arc(x, y, a, r, angle) {
+  arc(x, y, r, a, angle) {
     push();
     translate(x, y);
     rotate(angle);
@@ -15,7 +15,7 @@ class Shape {
       let v1 = r * sin(theta);
       vertex(v0, v1);
     }
-    endShape(CLOSE);
+    endShape(OPEN);
     pop();
   }
 
@@ -24,7 +24,7 @@ class Shape {
   astroid(x, y, r, a, b, angle) {
     push();
     translate(x, y);
-    rotate(angle)
+    rotate(angle);
     beginShape();
     for (let theta = 0; theta < TWO_PI; theta += 0.05) {
       let v0 = r * a * pow(cos(theta), 3);
@@ -269,7 +269,6 @@ class Shape {
     pop();
   }
 
-  
   // https://mathcurve.com/courbes2d.gb/croixdemalte/croixdemalte.shtml
   // malteseCross(x, y, r, a, b, angle) {
   //   push();
@@ -553,13 +552,13 @@ class Shape {
 
   // https://thecodingtrain.com/challenges/23-2d-supershapes
 
-  superformula(theta) {
-    let a = 1;
-    let b = 1;
-    let m = 8;
-    let n1 = 1;
-    let n2 = 1;
-    let n3 = 1;
+  superformula(theta, a, b, m, n1, n2, n3) {
+    // let a = 1;
+    // let b = 1;
+    // let m = 8;
+    // let n1 = 1;
+    // let n2 = 1;
+    // let n3 = 1;
     let part1 = (1 / a) * cos((theta * m) / 4);
     part1 = abs(part1);
     part1 = pow(part1, n2);
@@ -573,13 +572,13 @@ class Shape {
     return 1 / part3;
   }
 
-  supershape(x, y, sc, angle) {
+  supershape(x, y, sc, a, b, m, n1, n2, n3, angle) {
     push();
     translate(x, y);
     rotate(angle);
     beginShape();
     for (let theta = 0; theta <= TWO_PI; theta += 0.05) {
-      let r = this.superformula(theta);
+      let r = this.superformula(theta, a, b, m, n1, n2, n3);
       let v0 = sc * r * cos(theta);
       let v1 = sc * r * sin(theta);
       vertex(v0, v1);
@@ -606,7 +605,7 @@ class Shape {
 
   // https://mathcurve.com/courbes2d.gb/abdank/abdank.shtml
 
-  zigzag(x, y, r, a, n) {
+  zigzag(x, y, r, a, n, angle) {
     push();
     translate(x, y);
     rotate(angle);

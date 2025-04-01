@@ -1,0 +1,74 @@
+{
+  "Bird_with_bicorn_and_spiral": {
+    "img": "bird.png",
+    "shapes": [
+      {
+        "supershape": [
+          {
+            "shapeParams": [
+              { "a": 1.7 },
+              { "b": 0.7 },
+              { "m": 3 },
+              { "n1": 0.9 },
+              { "n2": 0.65 },
+              { "n3": 1.2 }
+            ]
+          },
+          { "shapeScale": 0.5 },
+          { "shapeAngle": 60 },
+          { "repeat": 3 }
+        ]
+      },
+      {
+        "cornuSprial": [
+          { "shapeParams": [{ "a": 1 }, { "n": 1 }] },
+          { "shapeScale": 0.5 },
+          { "shapeAngle": 0 },
+          { "repeat": 1 }
+        ]
+      }
+    ]
+  },
+  "Butterfly_with_bicorn_and_spiral": {
+    "img": "bird.png",
+    "shapes": [
+      {
+        "bicorn": [
+          { "shapeParams": [] },
+          { "shapeScale": 0.5 },
+          { "shapeAngle": 60 },
+          { "repeat": 4 }
+        ]
+      },
+      {
+        "cornuSprial": [
+          { "shapeParams": [{ "a": 1 }, { "n": 1 }] },
+          { "shapeScale": 0.5 },
+          { "shapeAngle": 0 },
+          { "repeat": 1 }
+        ]
+      }
+    ]
+  },
+  "Spiral_with_rose_and_spiral": {
+    "img": "spiral.png",
+    "shapes": [
+      {
+        "rose": [
+          { "shapeParams": [{ "d": 7 }, { "m": 5 }] },
+          { "shapeScale": 0.5 },
+          { "shapeAngle": 60 },
+          { "repeat": 1 }
+        ]
+      },
+      {
+        "spiral": [
+          { "shapeParams": [{ "a": 0.75 }, { "n": 0.5 }] },
+          { "shapeScale": 0.5 },
+          { "shapeAngle": 0 },
+          { "repeat": 1 }
+        ]
+      }
+    ]
+  }
+}

@@ -7,9 +7,11 @@ let zen;
 let data;
 
 function preload() {
-  // img = loadImage("assets/swirl.png"); 
-   img = loadImage("assets/butterfly.png"); 
-  // img = loadImage("assets/rose.png"); 
+  img = loadImage("assets/bird.png");
+  // img = loadImage("assets/butterfly.png");
+  // img = loadImage("assets/flower.png");
+  // img = loadImage("assets/rose.png");
+  // img = loadImage("assets/swirl.png");
 }
 
 // let shapeData = {
@@ -23,7 +25,7 @@ function setup() {
   rows = img.height;
 
   //let shapes = ["astroid", "supershape", "rose"]
-  let shapes = ["spiral", "astroid", "rose"];
+  let shapes = ["spiral", "astroid", "tearDrop"];
 
   createCanvas(spacing * cols, spacing * rows);
 
@@ -51,7 +53,7 @@ function dataArray(img, shapes) {
       } else if (r >= 20 && r < 200) {
         data[i][j] = { t: 1, r: 0.75, shape: shapes[1] };
       } else if (r < 20) {
-        data[i][j] = { t: 2, r: 0.5, shape: shapes[2]};
+        data[i][j] = { t: 2, r: 0.75, shape: shapes[2]};
       }
     }
   }

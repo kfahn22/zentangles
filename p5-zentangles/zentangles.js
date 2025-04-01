@@ -5,12 +5,13 @@ class Zentangles {
     this.rows = floor(height / this.spacing);
     this.shape = new Shape();
     this.data = data;
+    this.repeat = 4;
   }
 
-  chooseShape(i, j) {
+  chooseShape(i, j, r) {
     let x = i * this.spacing;
     let y = j * this.spacing;
-    let r = this.data[i][j].r * this.spacing;
+    //let r = this.data[i][j].r * this.spacing;
     switch (this.data[i][j].shape) {
       case "astroid":
         push();
@@ -19,7 +20,7 @@ class Zentangles {
         break;
       case "bicorn":
         push();
-        this.shape.bicorn(x, y, r, 0);
+        this.shape.bicorn(x, y, r, -PI/3);
         pop();
         break;
       case "butterfly":
@@ -66,7 +67,8 @@ class Zentangles {
         this.shape.knot(x, y, r, 0);
         break;
       case "lissajous":
-        this.shape.lissajous(x, y, r, 4, 3.6, 80);
+        //4, 3.6, 8;
+        this.shape.lissajous(x, y, r, -1, 2, 3, -PI/4);
         break;
       case "malteseCross":
         this.shape.amlteseCross(x, y, r, 3, 2, 0);
@@ -84,6 +86,8 @@ class Zentangles {
         this.shape.quadrifolium(x, y, r, 4);
         break;
       case "spiral":
+        // 0.75, 0.5
+        // 0.1, 1
         this.shape.spiral(x, y, r, 0.75, 0.5, 0);
         break;
       case "superellipse":
@@ -93,7 +97,7 @@ class Zentangles {
         this.shape.supershape(x, y, r, 8, 0);
         break;
       case "tearDrop":
-        this.shape.tearDrop(x, y, r, 0);
+        this.shape.tearDrop(x, y, r, PI * 1/6);
         break;
       case "zigzag":
         this.shape.zigzag(x, y, r, 1.5, 1, 0);
@@ -106,7 +110,11 @@ class Zentangles {
     
     for (let i = 0; i < this.cols; i++) {
       for (let j = 0; j < this.rows; j++) {
-        this.chooseShape(i, j);
+        for (let k = 0; k< this.repeat; k++)
+        {
+          let a = 1/k;
+          let r = a * this.data[i][j].r * this.spacing;
+          this.chooseShape(i, j, r);}
       }
     }
   }
