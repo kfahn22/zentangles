@@ -14,13 +14,11 @@
         "n": null,
         "shapeScale": 0.6,
         "shapeAngle": 45,
-        "splitX": 0.5,
-        "splitY": 0.4,
         "repeat": 4
       },
       "shape0": {
         "shapeName": "spiral",
-        "a": 0.8,
+        "a": 0.75,
         "b": null,
         "m": null,
         "n1": null,
@@ -29,9 +27,7 @@
         "n": 1,
         "shapeScale": 0.08,
         "shapeAngle": 0,
-        "splitX": 0,
-        "splitY": 0,
-        "repeat": 2
+        "repeat": 3
       },
       "shape1": {
         "shapeName": "superellipse",
@@ -44,8 +40,6 @@
         "n": null,
         "shapeScale": 0.36,
         "shapeAngle": -45,
-        "splitX": 0.5,
-        "splitY": 0.4,
         "repeat": 5
       }
     }
@@ -65,8 +59,6 @@
         "n": null,
         "shapeScale": 0.7,
         "shapeAngle": 135,
-        "splitX": 0.7,
-        "splitY": 0.5,
         "repeat": 3
       },
       "shape0": {
@@ -80,8 +72,6 @@
         "n": 1,
         "shapeScale": 0.7,
         "shapeAngle": -45,
-        "splitX": 0.7,
-        "splitY": 0.5,
         "repeat": 3
       },
       "shape2": {
@@ -95,8 +85,6 @@
         "n": null,
         "shapeScale": 0.5,
         "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
         "repeat": 3
       }
     }
@@ -116,8 +104,6 @@
         "n": null,
         "shapeScale": 0.7,
         "shapeAngle": 135,
-        "splitX": 0.7,
-        "splitY": 0.5,
         "repeat": 3
       },
       "shape0": {
@@ -131,8 +117,6 @@
         "n": 1,
         "shapeScale": 0.7,
         "shapeAngle": -45,
-        "splitX": 0.7,
-        "splitY": 0.5,
         "repeat": 3
       },
       "shape2": {
@@ -146,8 +130,6 @@
         "n": null,
         "shapeScale": 0.5,
         "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
         "repeat": 3
       }
     }
@@ -167,8 +149,6 @@
         "n": 1,
         "shapeScale": 0.1,
         "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
         "repeat": 2
       },
       "shape1": {
@@ -182,8 +162,6 @@
         "n": null,
         "shapeScale": 0.5,
         "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
         "repeat": 4
       },
       "shape2": {
@@ -197,8 +175,6 @@
         "n": 0.5,
         "shapeScale": 0.1,
         "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
         "repeat": 2
       }
     }
@@ -218,8 +194,6 @@
         "n": 5,
         "shapeScale": 0.4,
         "shapeAngle": 30,
-        "splitX": 0.7,
-        "splitY": 0.5,
         "repeat": 4
       },
       "shape1": {
@@ -233,8 +207,6 @@
         "n": 0.9,
         "shapeScale": 0.1,
         "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
         "repeat": 2
       },
       "shape2": {
@@ -265,24 +237,22 @@
         "n2": null,
         "n3": null,
         "n": null,
-        "shapeScale": 0.25,
+        "shapeScale": 0.5,
         "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
         "repeat": 4
       },
       "shape1": {
         "shapeName": "spiral",
-        "a": 0.8,
+        "a": 0.75,
         "b": 2,
         "m": 3,
         "n1": 1,
         "n2": 1,
         "n3": 1,
-        "n": 1,
-        "shapeScale": 0.075,
+        "n": 0.9,
+        "shapeScale": 0.1,
         "shapeAngle": 0,
-        "repeat": 1
+        "repeat": 2
       },
       "shape2": {
         "shapeName": "arc",
@@ -295,9 +265,7 @@
         "n": 0.5,
         "shapeScale": 0.5,
         "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
-        "repeat": 2
+        "repeat": 4
       },
       "shape0": {
         "shapeName": "kiss",
@@ -308,12 +276,9 @@
         "n2": null,
         "n3": null,
         "n": null,
-        "shapeScale": 0.5,
+        "shapeScale": 0.475,
         "shapeAngle": -45,
-        "splitX": 1,
-        "splitY": 0.5,
-        "repeat": 5
-
+        "repeat": 3
       }
     }
   },

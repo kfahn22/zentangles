@@ -2,7 +2,7 @@
 
 let cols, rows;
 let img;
-let spacing = 40;
+let spacing;
 let zen;
 let imageChoice, shapes;
 let choice;
@@ -19,6 +19,7 @@ function preload() {
 function setup() {
   cols = img.width;
   rows = img.height;
+  spacing = choice.spacing;
   let shapes = choice.shapes;
   
   createCanvas(spacing * cols, spacing * rows);

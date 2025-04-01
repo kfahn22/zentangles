@@ -9,3 +9,5 @@ This code creates a zentangles generator in p5.js.
 - [piskel](https://www.piskelapp.com/)
 
 https://github.com/kfahn22/l-system-examples/blob/main/example-dropdown.js
+
+https://github.com/kfahn22/zentangles/tree/main

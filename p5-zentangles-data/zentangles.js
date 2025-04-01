@@ -7,15 +7,29 @@ class Zentangles {
     this.data = data;
   }
 
-  determineAngle(x, y, ang) {
+  // determineAngle(x, y, ang) {
+  //   let angle;
+  //   if (x < width / 2 && y < height * 0.4) {
+  //     angle = ang;
+  //   } else if (x >= width / 2 && y < height * 0.4) {
+  //     angle = -ang;
+  //   } else if (x < width / 2 && y > height * 0.4) {
+  //     angle = -ang;
+  //   } else if (x >= width / 2 && y > height * 0.4) {
+  //     angle = ang;
+  //   }
+  //   return angle;
+  // }
+  determineAngle(x, y, ang, xadj, yadj) {
     let angle;
-    if (x < width / 2 && y < height * 0.4) {
+    
+    if (x < width * xadj && y < height * yadj) {
       angle = ang;
-    } else if (x >= width / 2 && y < height * 0.4) {
+    } else if (x >= width * xadj && y < height * yadj) {
       angle = -ang;
-    } else if (x < width / 2 && y > height * 0.4) {
+    } else if (x < width * xadj && y > height * yadj) {
       angle = -ang;
-    } else if (x >= width / 2 && y > height * 0.4) {
+    } else if (x >= width * xadj && y > height * yadj) {
       angle = ang;
     }
     return angle;
@@ -30,7 +44,9 @@ class Zentangles {
     let n3 = params.n3;
     let n = params.n;
     let ang = radians(params.shapeAngle);
-    let angle = this.determineAngle(x, y, ang);
+    let xadj = params.splitX;
+    let yadj = params.splitY;
+    let angle = this.determineAngle(x, y, ang, xadj, yadj);
     //console.log(angle)
     switch (choice) {
       case "arc":
@@ -151,7 +167,7 @@ class Zentangles {
         let y = j * this.spacing;
         for (let k = 0; k < n; k++) {
           //let a = 1 / pow(k, 0.5);
-          let a = 1 / exp(k/3);
+          let a = 1 / exp(k / 3);
           let r = a * shapeScale * this.spacing;
           this.chooseShape(x, y, choice, params, r);
         }
