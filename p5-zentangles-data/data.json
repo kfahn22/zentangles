@@ -17,23 +17,23 @@
         "splitX": 1,
         "splitY": 1,
         "repeat": 2,
-        "translate": 2
+        "translate": 0
       },
       "shape0": {
-        "shapeName": "clover",
-        "a": 0.7,
-        "b": null,
+        "shapeName": "astroid",
+        "a": [1,1],
+        "b": [1,1],
         "m": null,
         "n1": null,
         "n2": null,
         "n3": null,
         "n": [4, 4],
-        "shapeScale": 0.25,
-        "shapeAngle": 45,
+        "shapeScale": 0.4,
+        "shapeAngle": 0,
         "splitX": 1,
         "splitY": 1,
         "repeat": 1,
-        "translate": 0
+        "translate": 2
       },
       "shape2": {
         "shapeName": "arc",
@@ -64,8 +64,8 @@
         "shapeAngle": 45,
         "splitX": 1,
         "splitY": 1,
-        "repeat": 3,
-        "translate": 4
+        "repeat": 4,
+        "translate": 0
       }
     }
   },
@@ -392,20 +392,20 @@
     "translate": 0,
     "shapes": {
       "shape3": {
-        "shapeName": "astroid",
-        "a": [1.4, 1.4],
-        "b": [1.2, 1.2],
-        "m": null,
-        "n1": null,
-        "n2": null,
-        "n3": null,
+        "shapeName": "supershape",
+        "a": [1],
+        "b": [1],
+        "m": [8],
+        "n1": [1],
+        "n2": [1],
+        "n3": [1],
         "n": null,
         "shapeScale": 0.5,
         "shapeAngle": 0,
         "splitX": 0.7,
         "splitY": 0.5,
         "repeat": 3,
-        "translate": 0
+        "translate": 2
       },
       "shape1": {
         "shapeName": "kiss",
@@ -420,7 +420,7 @@
         "shapeAngle": -45,
         "splitX": 1,
         "splitY": 1,
-        "repeat": 3,
+        "repeat": 4,
         "translate": 0
       },
       "shape2": {
@@ -440,20 +440,20 @@
         "translate": 0
       },
       "shape0": {
-        "shapeName": "clover",
-        "a": null,
-        "b": null,
+        "shapeName": "astroid",
+        "a": [1,1],
+        "b": [1,1],
         "m": null,
         "n1": null,
         "n2": null,
         "n3": null,
         "n": [4, 4],
-        "shapeScale": 0.25,
-        "shapeAngle": -45,
+        "shapeScale": 0.5,
+        "shapeAngle": 0,
         "splitX": 1,
         "splitY": 0.5,
-        "repeat": 1,
-        "translate": 0
+        "repeat": 2,
+        "translate": 2
       }
     }
   },
@@ -477,7 +477,7 @@
         "repeat": 1,
         "translate": 0
       },
-      "shape1": {
+      "shape2": {
         "shapeName": "flower",
         "a": [1,3],
         "b": 0,
@@ -493,11 +493,11 @@
         "repeat": 1,
         "translate": 0
       },
-      "shape2": {
-        "shapeName": "astroid",
-        "a": [1, 2],
-        "b": [1, 2],
-        "m": null,
+      "shape1": {
+        "shapeName": "superellipse",
+        "a": [1, 1],
+        "b": [1, 1],
+        "m": [4,4],
         "n1": null,
         "n2": null,
         "n3": null,
@@ -510,19 +510,19 @@
         "translate": 2
       },
       "shape3": {
-        "shapeName": "arc",
-        "a": [2],
-        "b": 0,
+        "shapeName": "astroid",
+        "a": [1,1],
+        "b": [1,1],
         "m": 0,
         "n1": null,
         "n2": null,
         "n3": null,
         "n": [1],
-        "shapeScale": 0.38,
-        "shapeAngle": 45,
+        "shapeScale": 0.4,
+        "shapeAngle": 0,
         "splitX": 1,
         "splitY": 1,
-        "repeat": 3,
+        "repeat": 2,
         "translate": 2
       }
     }
@@ -548,52 +548,52 @@
         "translate": 4
       },
       "shape1": {
-        "shapeName": "clover",
-        "a": 0,
-        "b": 0,
+        "shapeName": "astroid",
+        "a": [1,1],
+        "b": [1,1],
         "m": 0,
         "n1": 0,
         "n2": 0,
         "n3": 0,
         "n": [4, 4],
-        "shapeScale": 0.25,
-        "shapeAngle": 90,
-        "splitX": 0.7,
-        "splitY": 0.5,
-        "repeat": 1,
-        "translate": 0
-      },
-      "shape2": {
-        "shapeName": "astroid",
-        "a": [1, 2],
-        "b": [1, 2],
-        "m": null,
-        "n1": null,
-        "n2": null,
-        "n3": null,
-        "n": 0,
         "shapeScale": 0.5,
-        "shapeAngle": 30,
+        "shapeAngle": 0,
         "splitX": 1,
         "splitY": 1,
         "repeat": 2,
         "translate": 2
       },
       "shape3": {
-        "shapeName": "flower",
-        "a": [1, 3],
-        "b": 2,
+        "shapeName": "superellipse",
+        "a": [1, 1],
+        "b": [2, 2],
+        "m": [4,4],
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0,
+        "shapeScale": 0.3,
+        "shapeAngle": 30,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 2,
+        "translate": 2
+      },
+      "shape2": {
+        "shapeName": "kiss",
+        "a": [2,2],
+        "b": [1,1],
         "m": [6, 8],
         "n1": null,
         "n2": null,
         "n3": null,
         "n": 0,
-        "shapeScale": 0.2,
-        "shapeAngle": 10,
-        "splitX": 0.7,
-        "splitY": 0.5,
-        "repeat": 1,
-        "translate": 4
+        "shapeScale": 0.4,
+        "shapeAngle": 45,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 4,
+        "translate": 0
       }
     }
   },
@@ -603,51 +603,51 @@
     "shapes": {
       "shape0": {
         "shapeName": "kiss",
-        "a": [1.2, 2.2],
-        "b": [2.2, 1.2],
+        "a": [2,2],
+        "b": [1,1],
         "m": 0,
         "n1": 0,
         "n2": 0,
         "n3": 0,
         "n": 0,
-        "shapeScale": 0.3,
+        "shapeScale": 0.4,
         "shapeAngle": 30,
         "splitX": 0.5,
         "splitY": 0.5,
-        "repeat": 2,
-        "translate": 4
+        "repeat": 3,
+        "translate": 0
       },
       "shape1": {
-        "shapeName": "clover",
-        "a": 0,
-        "b": 0,
+        "shapeName": "astroid",
+        "a": [1,1],
+        "b": [1,1],
         "m": 0,
         "n1": 0,
         "n2": 0,
         "n3": 0,
         "n": [4, 4],
-        "shapeScale": 0.25,
-        "shapeAngle": 90,
+        "shapeScale": 0.5,
+        "shapeAngle": 0,
         "splitX": 0.7,
         "splitY": 0.5,
-        "repeat": 1,
-        "translate": 0
+        "repeat": 2,
+        "translate": 2
       },
       "shape2": {
-        "shapeName": "astroid",
-        "a": [1, 2],
-        "b": [1, 2],
-        "m": null,
+        "shapeName": "superellipse",
+        "a": [1, 1],
+        "b": [2, 2],
+        "m": [4,4],
         "n1": null,
         "n2": null,
         "n3": null,
         "n": 0,
-        "shapeScale": 0.5,
+        "shapeScale": 0.3,
         "shapeAngle": 30,
         "splitX": 1,
         "splitY": 1,
         "repeat": 3,
-        "translate": 4
+        "translate": 2
       },
       "shape3": {
         "shapeName": "flower",
@@ -721,20 +721,20 @@
         "translate": 4
       },
       "shape0": {
-        "shapeName": "clover",
-        "a": null,
-        "b": null,
+        "shapeName": "astroid",
+        "a": [1,1],
+        "b": [1,1],
         "m": null,
         "n1": null,
         "n2": null,
         "n3": null,
         "n": [4, 4],
-        "shapeScale": 0.25,
-        "shapeAngle": 45,
+        "shapeScale": 0.5,
+        "shapeAngle": 0,
         "splitX": 1,
         "splitY": 1,
-        "repeat": 1,
-        "translate": 0
+        "repeat": 2,
+        "translate": 2
       }
     }
   },
@@ -743,7 +743,7 @@
     "spacing": 30,
     "translate": 0,
     "shapes": {
-      "shape3": {
+      "shape1": {
         "shapeName": "kiss",
         "a": [2, 2],
         "b": [1, 1],
@@ -754,12 +754,12 @@
         "n": null,
         "shapeScale": 0.45,
         "shapeAngle": 30,
-        "splitX": 0.5,
-        "splitY": 0.3,
+        "splitX": 1,
+        "splitY": 1,
         "repeat": 4,
         "translate": 0
       },
-      "shape1": {
+      "shape3": {
         "shapeName": "superellipse",
         "a": [1, 1],
         "b": [2, 2],
@@ -772,7 +772,7 @@
         "shapeAngle": -45,
         "splitX": 1,
         "splitY": 1,
-        "repeat": 3,
+        "repeat": 2,
         "translate": 0
       },
       "shape2": {
@@ -788,24 +788,24 @@
         "shapeAngle": -45,
         "splitX": 0.5,
         "splitY": 0.35,
-        "repeat": 3,
+        "repeat": 1,
         "translate": 0
       },
       "shape0": {
-        "shapeName": "clover",
-        "a": null,
-        "b": null,
+        "shapeName": "astroid",
+        "a": [1,1],
+        "b": [1,1],
         "m": null,
         "n1": null,
         "n2": null,
         "n3": null,
         "n": [4, 4],
-        "shapeScale": 0.25,
-        "shapeAngle": 45,
+        "shapeScale": 0.5,
+        "shapeAngle": 0,
         "splitX": 1,
         "splitY": 1,
-        "repeat": 1,
-        "translate": 0
+        "repeat": 2,
+        "translate": 2
       }
     }
   },
@@ -830,20 +830,20 @@
         "translate": 6
       },
       "shape1": {
-        "shapeName": "flower",
-        "a": [1, 3],
-        "b": null,
-        "m": [6, 8],
+        "shapeName": "superellipse",
+        "a": [1, 1],
+        "b": [1,1],
+        "m": [4,4],
         "n1": null,
         "n2": null,
         "n3": null,
         "n": null,
-        "shapeScale": 0.2,
-        "shapeAngle": 45,
+        "shapeScale": 0.5,
+        "shapeAngle": 90,
         "splitX": 1,
         "splitY": 1,
-        "repeat": 1,
-        "translate": 4
+        "repeat": 4,
+        "translate": 2
       },
       "shape2": {
         "shapeName": "spiral",
