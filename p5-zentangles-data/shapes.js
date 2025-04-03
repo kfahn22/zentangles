@@ -5,9 +5,9 @@ const e = 2.71828;
 class Shape {
   constructor() {}
 
-  arc(x, y, r, a, angle) {
+  arc(x, y, r, tr, a, angle) {
     push();
-    translate(x, y);
+    translate(x + random(-tr, tr), y + random(-tr, tr));
     rotate(angle);
     beginShape();
     for (let theta = 0; theta < a * PI; theta += 0.05) {
@@ -15,15 +15,17 @@ class Shape {
       let v1 = r * sin(theta);
       vertex(v0, v1);
     }
-    endShape(OPEN);
+    endShape(CLOSE);
     pop();
   }
 
   // https://mathcurve.com/courbes2d.gb/astroid/astroid.shtml
   // https://mathworld.wolfram.com/Astroid.html
-  astroid(x, y, r, a, b, angle) {
+  astroid(x, y, r, tr, aRange, bRange, angle) {
+    let a = random(aRange[0], aRange[1]);
+    let b = random(bRange[0], bRange[1]);
     push();
-    translate(x, y);
+    translate(x + random(-tr, tr), y + random(-tr, tr));
     rotate(angle);
     beginShape();
     for (let theta = 0; theta < TWO_PI; theta += 0.05) {
@@ -161,10 +163,12 @@ class Shape {
 
   //https://mathcurve.com/courbes2d/ornementales/ornementales.shtml
 
-  clover(x, y, sc, m, angle) {
+  clover(x, y, sc, tr, mRange, angle) {
+    let m = int(random(mRange[0], mRange[1]));
     push();
-    translate(x, y);
-    rotate(PI / 4);
+    translate(x + random(-tr, tr), y + random(-tr, tr));
+    //translate(x, y);
+    rotate(angle);
     beginShape();
     for (let theta = 0; theta < TWO_PI; theta += 0.05) {
       let r = 1 + cos(m * theta) + pow(sin(m * theta), 2);
@@ -247,12 +251,13 @@ class Shape {
     translate(x, y);
     rotate(angle);
     beginShape();
-    let a = 1;
     for (let theta = 0; theta < TWO_PI; theta += 0.05) {
-      let v0 = sc * (4 * a * pow(cos(theta / 2), 2) * cos(theta) - a);
-      let v1 = sc * (4 * a * pow(sin(theta / 2), 2) * sin(theta));
-      this.points.push(createVector(v0, v1));
+      let v0 = sc * (4 * pow(cos(theta / 2), 2) * cos(theta) - 1);
+      let v1 = sc * (4 * pow(sin(theta / 2), 2) * sin(theta));
+      vertex(v0, v1);
     }
+    endShape(CLOSE);
+    pop();
   }
 
   eight(x, y, r, angle) {
@@ -286,9 +291,11 @@ class Shape {
 
   // https://thecodingtrain.com/challenges/55-mathematical-rose-patterns
   // changed to flower
-  flower(x, y, sc, a, m, angle) {
+  flower(x, y, sc, tr, aRange, mRange, angle) {
+    let a = int(random(aRange[0], aRange[1]));
+    let m = int(random(mRange[0], mRange[1]));
     push();
-    translate(x, y);
+    translate(x + random(-tr, tr), y + random(-tr, tr));
     rotate(angle);
     beginShape();
     for (let theta = 0; theta < TWO_PI; theta += 0.01) {
@@ -309,9 +316,9 @@ class Shape {
     return (l - 1) / (l + 1);
   }
 
-  gear(x, y, sc, a, b, m) {
+  gear(x, y, sc, tr, a, b, m) {
     push();
-    translate(x, y);
+    translate(x + random(-tr, tr), y + random(-tr, tr));
     beginShape();
     for (let theta = 0; theta < 2 * PI; theta += 0.025) {
       let r = a + (1 / b) * this.hyperbolicTan(b * sin(m * theta));
@@ -347,9 +354,12 @@ class Shape {
   }
 
   // https://mathcurve.com/courbes2d.gb/bouche/bouche.shtml
-  kissCurve(x, y, r, a, b, angle) {
+  kissCurve(x, y, r, tr, aRange, bRange, angle) {
+    let a = random(aRange[0], aRange[1]);
+    let b = random(bRange[0], bRange[1]);
     push();
-    translate(x, y);
+    translate(x + random(-tr, tr), y + random(-tr, tr));
+    //translate(x, y);
     rotate(angle);
     beginShape();
     for (let theta = 0; theta < TWO_PI; theta += 0.05) {
@@ -428,7 +438,7 @@ class Shape {
   // https://mathcurve.com/courbes2d/ornementales/ornementales.shtml
   pinwheel(x, y, sc, m, n, angle) {
     push();
-    translate(x, y);
+      translate(x + random(-tr, tr), y + random(-tr, tr));
     rotate(angle);
     beginShape();
     for (let theta = 0; theta < TWO_PI; theta += 0.01) {
@@ -453,13 +463,14 @@ class Shape {
     return denominator / rec(numerator, denominator);
   }
 
-  rose(x, y, sc, d, m) {
+  // d = 8, m = 5
+  rose(x, y, sc, tr, dRange, mRange) {
+    let d = random(dRange[0], dRange[1]);
+    let m = random(mRange[0], mRange[1]);
     push();
-    translate(x, y);
+    translate(x + random(-tr, tr), y + random(-tr, tr));
     beginShape();
     let k = d / m;
-    // let d = 8;
-    // let n = 5;
     for (
       let theta = 0;
       theta < TWO_PI * this.reduceDenominator(d, m);
@@ -487,9 +498,10 @@ class Shape {
     pop();
   }
 
-  polygon(x, y, r, m, angle) {
+  polygon(x, y, r, tr, mRange, angle) {
+    let m = random(mRange[0], mRange[1]);
     push();
-    translate(x, y);
+     translate(x + random(-tr, tr), y + random(-tr, tr));
     rotate(angle);
     beginShape();
     for (let theta = 0; theta < TWO_PI; theta += TWO_PI / m) {
@@ -535,9 +547,13 @@ class Shape {
     return val / abs(val);
   }
 
-  superellipse(x, y, r, a, b, m, angle) {
+  superellipse(x, y, r, tr, aRange, bRange, mRange, angle) {
+    let a = random(aRange[0], aRange[1]);
+    let b = random(bRange[0], bRange[1]);
+    let m = random(mRange[0], mRange[1]);
     push();
-    translate(x, y);
+    translate(x + random(-tr, tr), y + random(-tr, tr));
+    //translate(x, y);
     rotate(angle);
     beginShape();
     for (let theta = 0; theta < TWO_PI; theta += 0.05) {
@@ -553,12 +569,6 @@ class Shape {
   // https://thecodingtrain.com/challenges/23-2d-supershapes
 
   superformula(theta, a, b, m, n1, n2, n3) {
-    // let a = 1;
-    // let b = 1;
-    // let m = 8;
-    // let n1 = 1;
-    // let n2 = 1;
-    // let n3 = 1;
     let part1 = (1 / a) * cos((theta * m) / 4);
     part1 = abs(part1);
     part1 = pow(part1, n2);
@@ -572,8 +582,9 @@ class Shape {
     return 1 / part3;
   }
 
-  supershape(x, y, sc, a, b, m, n1, n2, n3, angle) {
+  supershape(x, y, sc, tr, a, b, m, n1, n2, n3, angle) {
     push();
+    //translate(x + random(-tr, tr), y + random(-tr, tr));
     translate(x, y);
     rotate(angle);
     beginShape();

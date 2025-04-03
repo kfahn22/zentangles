@@ -1,12 +1,83 @@
 {
+  "bird": {
+    "img": "assets/bird.png",
+    "spacing": 40,
+    "shapes": {
+      "shape1": {
+        "shapeName": "supershape",
+        "a": [1.7],
+        "b": [0.7],
+        "m": [3],
+        "n1": [0.9],
+        "n2": [0.65],
+        "n3": [1.2],
+        "n": null,
+        "shapeScale": 0.5,
+        "shapeAngle": 105,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 2,
+        "translate": 2
+      },
+      "shape0": {
+        "shapeName": "clover",
+        "a": 0.7,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": [4, 4],
+        "shapeScale": 0.25,
+        "shapeAngle": 45,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 1,
+        "translate": 0
+      },
+      "shape2": {
+        "shapeName": "arc",
+        "a": 2,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.4,
+        "shapeAngle": 0,
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 3,
+        "translate": 0
+      },
+      "shape3": {
+        "shapeName": "kiss",
+        "a": [2, 2],
+        "b": [1, 1],
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.4,
+        "shapeAngle": 45,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 3,
+        "translate": 4
+      }
+    }
+  },
   "butterfly": {
     "img": "assets/butterfly.png",
     "spacing": 40,
+    "translate": 0,
     "shapes": {
-      "shape2": {
+      "shape1": {
         "shapeName": "kiss",
-        "a": 1.7,
-        "b": 0.7,
+        "a": [1.7, 1.7],
+        "b": [0.7, 0.7],
         "m": 3,
         "n1": 0.9,
         "n2": 0.65,
@@ -16,7 +87,8 @@
         "shapeAngle": 45,
         "splitX": 0.5,
         "splitY": 0.4,
-        "repeat": 4
+        "repeat": 4,
+        "translate": 0
       },
       "shape0": {
         "shapeName": "spiral",
@@ -31,13 +103,14 @@
         "shapeAngle": 0,
         "splitX": 0,
         "splitY": 0,
-        "repeat": 2
+        "repeat": 1,
+        "translate": 0
       },
-      "shape1": {
+      "shape2": {
         "shapeName": "superellipse",
-        "a": 1,
-        "b": 2,
-        "m": 4,
+        "a": [1, 1],
+        "b": [2, 2],
+        "m": [4, 4],
         "n1": null,
         "n2": null,
         "n3": null,
@@ -46,73 +119,25 @@
         "shapeAngle": -45,
         "splitX": 0.5,
         "splitY": 0.4,
-        "repeat": 5
+        "repeat": 5,
+        "translate": 0
       }
     }
   },
-  "bird": {
-    "img": "assets/bird.png",
-    "spacing": 40,
-    "shapes": {
-      "shape1": {
-        "shapeName": "supershape",
-        "a": 1.7,
-        "b": 0.7,
-        "m": 3,
-        "n1": 0.9,
-        "n2": 0.65,
-        "n3": 1.2,
-        "n": null,
-        "shapeScale": 0.7,
-        "shapeAngle": 135,
-        "splitX": 0.7,
-        "splitY": 0.5,
-        "repeat": 3
-      },
-      "shape0": {
-        "shapeName": "cornuSpiral",
-        "a": 0.7,
-        "b": null,
-        "m": null,
-        "n1": null,
-        "n2": null,
-        "n3": null,
-        "n": 1,
-        "shapeScale": 0.7,
-        "shapeAngle": -45,
-        "splitX": 0.7,
-        "splitY": 0.5,
-        "repeat": 3
-      },
-      "shape2": {
-        "shapeName": "arc",
-        "a": 2,
-        "b": null,
-        "m": null,
-        "n1": null,
-        "n2": null,
-        "n3": null,
-        "n": null,
-        "shapeScale": 0.5,
-        "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
-        "repeat": 3
-      }
-    }
-  },
+
   "canyon": {
     "img": "assets/fip.jpg",
     "spacing": 5,
+    "translate": 0,
     "shapes": {
       "shape1": {
         "shapeName": "supershape",
-        "a": 1.7,
-        "b": 0.7,
-        "m": 3,
-        "n1": 0.9,
-        "n2": 0.65,
-        "n3": 1.2,
+        "a": [1, 1],
+        "b": [1, 1],
+        "m": [4],
+        "n1": [1, 1],
+        "n2": [1, 1],
+        "n3": [1, 1],
         "n": null,
         "shapeScale": 0.7,
         "shapeAngle": 135,
@@ -152,124 +177,97 @@
       }
     }
   },
-  "swirl": {
-    "img": "assets/swirl.png",
+  "ct_logo": {
+    "img": "assets/ct_logo.png",
     "spacing": 40,
+    "translate": 2,
     "shapes": {
-      "shape0": {
-        "shapeName": "spiral",
-        "a": 0.75,
-        "b": 0.7,
-        "m": 3,
-        "n1": 0.9,
-        "n2": 0.65,
-        "n3": 1.2,
-        "n": 1,
-        "shapeScale": 0.1,
-        "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
-        "repeat": 2
-      },
       "shape1": {
-        "shapeName": "polygon",
-        "a": null,
-        "b": null,
-        "m": 6,
+        "shapeName": "kiss",
+        "a": [2, 2],
+        "b": [1, 1],
+        "m": null,
         "n1": null,
         "n2": null,
         "n3": null,
         "n": null,
         "shapeScale": 0.5,
-        "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
-        "repeat": 4
+        "shapeAngle": 45,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 5,
+        "translate": 0
       },
-      "shape2": {
-        "shapeName": "spiral",
-        "a": 0.75,
-        "b": null,
-        "m": null,
-        "n1": null,
-        "n2": null,
-        "n3": null,
-        "n": 0.5,
-        "shapeScale": 0.1,
-        "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
-        "repeat": 2
-      }
-    }
-  },
-  "rose": {
-    "img": "assets/rose.png",
-    "spacing": 40,
-    "shapes": {
       "shape0": {
-        "shapeName": "flower",
-        "a": 2,
-        "b": 1,
-        "m": 8,
-        "n1": 0.9,
-        "n2": 0.65,
-        "n3": 1.2,
-        "n": 5,
-        "shapeScale": 0.4,
-        "shapeAngle": 30,
-        "splitX": 0.7,
-        "splitY": 0.5,
-        "repeat": 4
-      },
-      "shape1": {
         "shapeName": "spiral",
-        "a": 0.75,
-        "b": 2,
-        "m": 3,
-        "n1": 1,
-        "n2": 1,
-        "n3": 1,
-        "n": 0.9,
-        "shapeScale": 0.1,
-        "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
-        "repeat": 2
-      },
-      "shape2": {
-        "shapeName": "spiral",
-        "a": 0.75,
+        "a": 0.7,
         "b": null,
         "m": null,
         "n1": null,
         "n2": null,
         "n3": null,
-        "n": 0.5,
-        "shapeScale": 0.1,
+        "n": 1,
+        "shapeScale": 0.08,
+        "shapeAngle": 90,
+        "splitX": 0,
+        "splitY": 0,
+        "repeat": 1,
+        "translate": 0
+      },
+      "shape2": {
+        "shapeName": "gear",
+        "a": 1,
+        "b": 2,
+        "m": 10,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.45,
         "shapeAngle": 0,
-        "repeat": 2
-      }
-    }
-  },
-  "fish": {
-    "img": "assets/fish.png",
-    "spacing": 40,
-    "shapes": {
+        "splitX": 0.5,
+        "splitY": 0.4,
+        "repeat": 3,
+        "translate": 0
+      },
       "shape3": {
-        "shapeName": "kiss",
-        "a": 2,
-        "b": 1,
-        "m": null,
+        "shapeName": "superellipse",
+        "a": [1, 1],
+        "b": [2, 2],
+        "m": [4, 4],
         "n1": null,
         "n2": null,
         "n3": null,
         "n": null,
         "shapeScale": 0.25,
         "shapeAngle": 0,
+        "splitX": 0.5,
+        "splitY": 0.4,
+        "repeat": 5,
+        "translate": 0
+      }
+    }
+  },
+  "fish": {
+    "img": "assets/fish.png",
+    "spacing": 40,
+    "translate": 0,
+    "shapes": {
+      "shape3": {
+        "shapeName": "astroid",
+        "a": [1.4, 1.4],
+        "b": [1.2, 1.2],
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.7,
+        "shapeAngle": 0,
         "splitX": 0.7,
         "splitY": 0.5,
-        "repeat": 4
+        "repeat": 6,
+        "translate": 0
       },
       "shape1": {
         "shapeName": "spiral",
@@ -280,9 +278,10 @@
         "n2": 1,
         "n3": 1,
         "n": 1,
-        "shapeScale": 0.075,
+        "shapeScale": 0.07,
         "shapeAngle": 0,
-        "repeat": 1
+        "repeat": 1,
+        "translate": 0
       },
       "shape2": {
         "shapeName": "arc",
@@ -297,12 +296,13 @@
         "shapeAngle": 0,
         "splitX": 0.7,
         "splitY": 0.5,
-        "repeat": 2
+        "repeat": 2,
+        "translate": 0
       },
       "shape0": {
         "shapeName": "kiss",
-        "a": 2,
-        "b": 1,
+        "a": [2, 2],
+        "b": [1, 1],
         "m": 0,
         "n1": null,
         "n2": null,
@@ -312,40 +312,45 @@
         "shapeAngle": -45,
         "splitX": 1,
         "splitY": 0.5,
-        "repeat": 5
-
+        "repeat": 5,
+        "translate": 0
       }
     }
   },
-  "squirrel": {
-    "img": "assets/squirrel.png",
+  "flower": {
+    "img": "assets/flower.png",
     "spacing": 40,
+    "translate": 0,
     "shapes": {
       "shape3": {
-        "shapeName": "kiss",
-        "a": 2,
-        "b": 1,
-        "m": null,
+        "shapeName": "superellipse",
+        "a": [1, 1],
+        "b": [3, 3],
+        "m": [4, 4],
         "n1": null,
         "n2": null,
         "n3": null,
         "n": null,
-        "shapeScale": 0.45,
-        "shapeAngle": 0,
-        "repeat": 4
+        "shapeScale": 0.25,
+        "shapeAngle": 45,
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 3,
+        "translate": 0
       },
       "shape1": {
-        "shapeName": "spiral",
-        "a": 0.75,
-        "b": 2,
+        "shapeName": "astroid",
+        "a": [1, 1],
+        "b": [1, 1],
         "m": 3,
         "n1": 1,
         "n2": 1,
         "n3": 1,
-        "n": 0.9,
-        "shapeScale": 0.1,
+        "n": 1,
+        "shapeScale": 0.5,
         "shapeAngle": 0,
-        "repeat": 2
+        "repeat": 3,
+        "translate": 2
       },
       "shape2": {
         "shapeName": "arc",
@@ -358,20 +363,503 @@
         "n": 0.5,
         "shapeScale": 0.5,
         "shapeAngle": 0,
-        "repeat": 4
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 3,
+        "translate": 4
       },
       "shape0": {
-        "shapeName": "lissajous",
-        "a": -1,
-        "b": 2,
-        "m": 3,
+        "shapeName": "kiss",
+        "a": [2, 2],
+        "b": [1, 1],
+        "m": 0,
         "n1": null,
         "n2": null,
         "n3": null,
         "n": null,
         "shapeScale": 0.5,
-        "shapeAngle": -90,
-        "repeat": 3
+        "shapeAngle": -45,
+        "splitX": 0.6,
+        "splitY": 1,
+        "repeat": 5,
+        "translate": 0
+      }
+    }
+  },
+  "maze": {
+    "img": "assets/maze.png",
+    "spacing": 30,
+    "translate": 0,
+    "shapes": {
+      "shape3": {
+        "shapeName": "astroid",
+        "a": [1.4, 1.4],
+        "b": [1.2, 1.2],
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.5,
+        "shapeAngle": 0,
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 3,
+        "translate": 0
+      },
+      "shape1": {
+        "shapeName": "kiss",
+        "a": [2, 2],
+        "b": [1, 1],
+        "m": 0,
+        "n1": 0,
+        "n2": 0,
+        "n3": 0,
+        "n": 0,
+        "shapeScale": 0.4,
+        "shapeAngle": -45,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 3,
+        "translate": 0
+      },
+      "shape2": {
+        "shapeName": "superellipse",
+        "a": [2, 2],
+        "b": [1, 1],
+        "m": [4, 4],
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0,
+        "shapeScale": 0.3,
+        "shapeAngle": 45,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 3,
+        "translate": 0
+      },
+      "shape0": {
+        "shapeName": "clover",
+        "a": null,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": [4, 4],
+        "shapeScale": 0.25,
+        "shapeAngle": -45,
+        "splitX": 1,
+        "splitY": 0.5,
+        "repeat": 1,
+        "translate": 0
+      }
+    }
+  },
+  "mountain": {
+    "img": "assets/mountain.png",
+    "spacing": 30,
+    "shapes": {
+      "shape0": {
+        "shapeName": "spiral",
+        "a": 0.75,
+        "b": [1],
+        "m": [6],
+        "n1": [1],
+        "n2": [1],
+        "n3": [1],
+        "n": 0.5,
+        "shapeScale": 0.3,
+        "shapeAngle": 0,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 1,
+        "translate": 0
+      },
+      "shape1": {
+        "shapeName": "flower",
+        "a": [1,3],
+        "b": 0,
+        "m": [6,8],
+        "n1": 0,
+        "n2": 0,
+        "n3": 0,
+        "n": [0.5],
+        "shapeScale": 0.25,
+        "shapeAngle": 90,
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 1,
+        "translate": 0
+      },
+      "shape2": {
+        "shapeName": "astroid",
+        "a": [1, 2],
+        "b": [1, 2],
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0,
+        "shapeScale": 0.5,
+        "shapeAngle": 30,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 2,
+        "translate": 2
+      },
+      "shape3": {
+        "shapeName": "arc",
+        "a": [2],
+        "b": 0,
+        "m": 0,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": [1],
+        "shapeScale": 0.38,
+        "shapeAngle": 45,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 3,
+        "translate": 2
+      }
+    }
+  },
+  "red_rocks": {
+    "img": "assets/red-rocks.png",
+    "spacing": 30,
+    "shapes": {
+      "shape0": {
+        "shapeName": "supershape",
+        "a": [1],
+        "b": [1],
+        "m": [6],
+        "n1": [1],
+        "n2": [1],
+        "n3": [1],
+        "n": 0,
+        "shapeScale": 0.5,
+        "shapeAngle": 10,
+        "splitX": 0.5,
+        "splitY": 0.5,
+        "repeat": 3,
+        "translate": 4
+      },
+      "shape1": {
+        "shapeName": "clover",
+        "a": 0,
+        "b": 0,
+        "m": 0,
+        "n1": 0,
+        "n2": 0,
+        "n3": 0,
+        "n": [4, 4],
+        "shapeScale": 0.25,
+        "shapeAngle": 90,
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 1,
+        "translate": 0
+      },
+      "shape2": {
+        "shapeName": "astroid",
+        "a": [1, 2],
+        "b": [1, 2],
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0,
+        "shapeScale": 0.5,
+        "shapeAngle": 30,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 2,
+        "translate": 2
+      },
+      "shape3": {
+        "shapeName": "flower",
+        "a": [1, 3],
+        "b": 2,
+        "m": [6, 8],
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0,
+        "shapeScale": 0.2,
+        "shapeAngle": 10,
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 1,
+        "translate": 4
+      }
+    }
+  },
+  "rose": {
+    "img": "assets/rose.png",
+    "spacing": 30,
+    "shapes": {
+      "shape0": {
+        "shapeName": "kiss",
+        "a": [1.2, 2.2],
+        "b": [2.2, 1.2],
+        "m": 0,
+        "n1": 0,
+        "n2": 0,
+        "n3": 0,
+        "n": 0,
+        "shapeScale": 0.3,
+        "shapeAngle": 30,
+        "splitX": 0.5,
+        "splitY": 0.5,
+        "repeat": 2,
+        "translate": 4
+      },
+      "shape1": {
+        "shapeName": "clover",
+        "a": 0,
+        "b": 0,
+        "m": 0,
+        "n1": 0,
+        "n2": 0,
+        "n3": 0,
+        "n": [4, 4],
+        "shapeScale": 0.25,
+        "shapeAngle": 90,
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 1,
+        "translate": 0
+      },
+      "shape2": {
+        "shapeName": "astroid",
+        "a": [1, 2],
+        "b": [1, 2],
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0,
+        "shapeScale": 0.5,
+        "shapeAngle": 30,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 3,
+        "translate": 4
+      },
+      "shape3": {
+        "shapeName": "flower",
+        "a": [1, 3],
+        "b": 2,
+        "m": [6, 8],
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0,
+        "shapeScale": 0.2,
+        "shapeAngle": 10,
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 1,
+        "translate": 4
+      }
+    }
+  },
+  "squirrel": {
+    "img": "assets/squirrel.png",
+    "spacing": 30,
+    "translate": 0,
+    "shapes": {
+      "shape3": {
+        "shapeName": "arc",
+        "a": 2,
+        "b": 1,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.4,
+        "shapeAngle": 0,
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 2,
+        "translate": 0
+      },
+      "shape1": {
+        "shapeName": "kiss",
+        "a": [1.1, 1.1],
+        "b": [1, 1],
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.5,
+        "shapeAngle": 60,
+        "splitX": 1,
+        "splitY": 0.5,
+        "repeat": 4,
+        "translate": 2
+      },
+      "shape2": {
+        "shapeName": "spiral",
+        "a": 0.7,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 1,
+        "shapeScale": 0.07,
+        "shapeAngle": 150,
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 2,
+        "translate": 4
+      },
+      "shape0": {
+        "shapeName": "clover",
+        "a": null,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": [4, 4],
+        "shapeScale": 0.25,
+        "shapeAngle": 45,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 1,
+        "translate": 0
+      }
+    }
+  },
+  "sunflower": {
+    "img": "assets/sunflower.png",
+    "spacing": 30,
+    "translate": 0,
+    "shapes": {
+      "shape3": {
+        "shapeName": "kiss",
+        "a": [2, 2],
+        "b": [1, 1],
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.45,
+        "shapeAngle": 30,
+        "splitX": 0.5,
+        "splitY": 0.3,
+        "repeat": 4,
+        "translate": 0
+      },
+      "shape1": {
+        "shapeName": "superellipse",
+        "a": [1, 1],
+        "b": [2, 2],
+        "m": [3, 3],
+        "n1": 0,
+        "n2": 0,
+        "n3": 0,
+        "n": 0,
+        "shapeScale": 0.3,
+        "shapeAngle": -45,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 3,
+        "translate": 0
+      },
+      "shape2": {
+        "shapeName": "heart",
+        "a": null,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.35,
+        "shapeAngle": -45,
+        "splitX": 0.5,
+        "splitY": 0.35,
+        "repeat": 3,
+        "translate": 0
+      },
+      "shape0": {
+        "shapeName": "clover",
+        "a": null,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": [4, 4],
+        "shapeScale": 0.25,
+        "shapeAngle": 45,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 1,
+        "translate": 0
+      }
+    }
+  },
+  "swirl": {
+    "img": "assets/swirl.png",
+    "spacing": 50,
+    "shapes": {
+      "shape0": {
+        "shapeName": "rose",
+        "a": [7, 7],
+        "b": [1, 1],
+        "m": [5, 5],
+        "n1": [1, 1],
+        "n2": [1, 1],
+        "n3": [1, 1],
+        "n": 0,
+        "shapeScale": 0.4,
+        "shapeAngle": 45,
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 1,
+        "translate": 6
+      },
+      "shape1": {
+        "shapeName": "flower",
+        "a": [1, 3],
+        "b": null,
+        "m": [6, 8],
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.2,
+        "shapeAngle": 45,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 1,
+        "translate": 4
+      },
+      "shape2": {
+        "shapeName": "spiral",
+        "a": 0.75,
+        "b": null,
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0.5,
+        "shapeScale": 0.1,
+        "shapeAngle": 0,
+        "splitX": 0.7,
+        "splitY": 0.5,
+        "repeat": 2,
+        "translate": 6
       }
     }
   }
