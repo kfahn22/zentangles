@@ -163,7 +163,7 @@ flower(x, y, sc, tr, aRange, mRange, angle) {
 
 ## Resources
 
-- [p5 sketch to view grid images](https://editor.p5js.org/codingtrain/sketches/_7Pa8986g)
+- [p5 sketch to view grid images](https://editor.p5js.org/kfahn/sketches/kLbMb3-hz)
 
 - [Wave Function Collapse images](https://github.com/CodingTrain/Wave-Function-Collapse/tree/main/p5js/overlapping-model/images)
 
