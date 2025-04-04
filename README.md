@@ -169,7 +169,7 @@ flower(x, y, sc, tr, aRange, mRange, angle) {
 
  <p align="center"><img src="examples/edited-image.jpg" alt="Slot canyon zentangle" width="500px"></p>
 
-I am not sure that this method was entirely successful since it is probably hard to identify the source image, but I still think it generates a nice pattern. For example, I edited a picture of a slot canyon, and here is the zentangle.
+I am not sure that this method was entirely successful since it is probably hard to identify the source image, but I still think it generates a nice pattern. Here is the slot canyon zentangle.
 
  <p align="center"><img src="zentangle-examples/red-rocks.jpg" alt="Slot canyon zentangle" width="500px"></p>
 
