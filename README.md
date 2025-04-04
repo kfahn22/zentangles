@@ -1,6 +1,6 @@
 # Zentangles Generator
 
-This code creates a zentangle in p5.js by rendering shape(s) within a grid. Just as a cross-stitch is a grid of colored threads that reveal a pattern, the zentangle reveals a pattern by the choice of shapes within the grid.
+This code creates a zentangle in p5.js by rendering shape(s) within a grid. Just as a cross-stitch is a grid of colored threads that reveal a pattern, the zentangle reveals a pattern by the choice of shapes within the grid. 
 
 <p align="center"><img src="examples/fish-grid.jpg" alt="Fish grid image" width="500px"></p>
 
@@ -79,7 +79,7 @@ I am using low resolution grayscale images -- generally around 40 pixels wide --
   }
   ```
 
- The dataArray function receives the image and the array of shapes associated with the image. Depending on the r value of a square in the grid, the corresponding shape is added to the dataArray for a given [i,j] location in the grid. For example, if r value of the the square was 0, the assigned shape might be the kiss curve.  While it would be possible to expand beyond 4 colors, for simplicity sake that is all I am using.
+ The dataArray function receives the image and the array of shapes (with shape parameters) associated with the image. Depending on the r value of a square in the grid, the corresponding shape is added to the dataArray for a given [i,j] location in the grid. For example, if r value of the the square was 0, the assigned shape might be the kiss curve.  While it would be possible to expand beyond 4 colors, for simplicity sake that is all I am using.
 
 ```JavaScript
 function dataArray(img, shapes) {
@@ -119,9 +119,9 @@ function dataArray(img, shapes) {
 
  The images are created using several different methods. The wave function collapse model uses simple grid images, which was the genesis of my idea to adapt them  to control sketch parameters.
  
- I started with free cross stitch patterns, and then adapted the ones that I thought would be best suited to my use case in [Piskel](https://www.piskelapp.com/). I stuck to simple designs, such as flowers and animals. 
+ I started with free cross stitch patterns, and then adapted the ones that I thought would be best suited to my use-case in [Piskel](https://www.piskelapp.com/). I stuck to simple designs, such as flowers and animals.
 
- I also uploaded some of my photos to Piskel and used as the basis to ceate some grid images. I am not sure that this method was entirely successful since it is probably hard to identify the source image, but I still think it generates a nice pattern. For example, I edited a picture of a slot canyon, and here is the zentangles.
+ I also uploaded some of my photos to Piskel and used as the basis to ceate some grid images. I am not sure that this method was entirely successful since it is probably hard to identify the source image, but I still think it generates a nice pattern. For example, I edited a picture of a slot canyon, and here is the zentangle.
 
  <p align="center"><img src="examples/red-rocks.jpg" alt="Slot canyon zentangle" width="500px"></p>
 
@@ -131,9 +131,8 @@ function dataArray(img, shapes) {
 
 - [Wave Function Collapse images](https://github.com/CodingTrain/Wave-Function-Collapse/tree/main/p5js/overlapping-model/images)
 
+- [CraftDesignOnline](https://craftdesignonline.com/pattern-grid/)
+
 - [Sunflower cross stitch pattern](https://www.lovecrafts.com/en-us/p/sunflower-in-dmc-pat0883-downloadable-pdf)
 
 -[Piskel tutorial](https://github.com/kfahn22/Wave-Function-Collapse/wiki/Creating-a-source-image-for-the-WFC-%E2%80%90-overlapping-model)
-
-
-https://editor.p5js.org/kfahn/sketches/X3DL_LqGB

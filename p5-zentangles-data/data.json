@@ -1,7 +1,7 @@
 {
   "bird": {
     "img": "assets/bird.png",
-    "spacing": 40,
+    "spacing": 30,
     "shapes": {
       "shape1": {
         "shapeName": "supershape",
@@ -71,7 +71,7 @@
   },
   "butterfly": {
     "img": "assets/butterfly.png",
-    "spacing": 40,
+    "spacing": 30,
     "translate": 0,
     "shapes": {
       "shape1": {
@@ -128,7 +128,6 @@
   "canyon": {
     "img": "assets/fip.jpg",
     "spacing": 5,
-    "translate": 0,
     "shapes": {
       "shape1": {
         "shapeName": "supershape",
@@ -280,6 +279,8 @@
         "n": 1,
         "shapeScale": 0.07,
         "shapeAngle": 0,
+        "splitX": 1,
+        "splitY": 1,
         "repeat": 1,
         "translate": 0
       },
@@ -309,7 +310,7 @@
         "n3": null,
         "n": null,
         "shapeScale": 0.5,
-        "shapeAngle": -45,
+        "shapeAngle": 45,
         "splitX": 1,
         "splitY": 0.5,
         "repeat": 5,
@@ -319,7 +320,7 @@
   },
   "flower": {
     "img": "assets/flower.png",
-    "spacing": 40,
+    "spacing": 30,
     "translate": 0,
     "shapes": {
       "shape3": {
@@ -529,7 +530,7 @@
   },
   "red_rocks": {
     "img": "assets/red-rocks.png",
-    "spacing": 30,
+    "spacing": 15,
     "shapes": {
       "shape0": {
         "shapeName": "supershape",
@@ -599,7 +600,7 @@
   },
   "rose": {
     "img": "assets/rose.png",
-    "spacing": 30,
+    "spacing": 20,
     "shapes": {
       "shape0": {
         "shapeName": "kiss",
@@ -669,7 +670,7 @@
   },
   "squirrel": {
     "img": "assets/squirrel.png",
-    "spacing": 30,
+    "spacing": 25,
     "translate": 0,
     "shapes": {
       "shape3": {
@@ -733,14 +734,14 @@
         "shapeAngle": 0,
         "splitX": 1,
         "splitY": 1,
-        "repeat": 2,
+        "repeat": 1,
         "translate": 2
       }
     }
   },
   "sunflower": {
     "img": "assets/sunflower.png",
-    "spacing": 30,
+    "spacing": 12,
     "translate": 0,
     "shapes": {
       "shape1": {

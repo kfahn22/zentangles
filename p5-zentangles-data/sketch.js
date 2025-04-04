@@ -7,14 +7,12 @@ let zen;
 let imageChoice, shapes;
 let choice;
 let data;
-let options
-
-
+let options;
 
 function preload() {
   loadJSON("data.json", (loadedData) => {
     data = loadedData;
-    
+
     options = [
       data.bird,
       data.butterfly,
@@ -41,7 +39,11 @@ function setup() {
   spacing = choice.spacing;
   let shapes = choice.shapes;
 
-  createCanvas(spacing * cols, spacing * rows);
+  let canvas = createCanvas(spacing * cols, spacing * rows);
+  canvas.position(
+    (windowWidth - spacing * cols) / 2,
+    (windowHeight - spacing * rows) / 2
+  );
   data = dataArray(img, shapes);
   zen = new Zentangles(spacing, data);
   background(255);
@@ -51,8 +53,7 @@ function setup() {
   noLoop();
 }
 
-function draw() {
-}
+function draw() {}
 
 function dataArray(img, shapes) {
   let data = [];
@@ -74,7 +75,7 @@ function dataArray(img, shapes) {
         data[i][j] = {
           shape: shapes.shape2,
         };
-       } else if (r >= 140 && r < 200) {
+      } else if (r >= 140 && r < 200) {
         data[i][j] = {
           shape: shapes.shape3,
         };
