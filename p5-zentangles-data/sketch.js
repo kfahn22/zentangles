@@ -16,10 +16,13 @@ function preload() {
     options = [
       data.bird,
       data.butterfly,
+      data.coding_train,
+      data.cubes,
       data.flower,
       data.fish,
       data.maze,
       data.mountain,
+      data.peacock,
       data.red_rocks,
       data.rose,
       data.swirl,

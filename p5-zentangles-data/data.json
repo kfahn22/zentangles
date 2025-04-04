@@ -21,8 +21,8 @@
       },
       "shape0": {
         "shapeName": "astroid",
-        "a": [1,1],
-        "b": [1,1],
+        "a": [1, 1],
+        "b": [1, 1],
         "m": null,
         "n1": null,
         "n2": null,
@@ -176,10 +176,9 @@
       }
     }
   },
-  "ct_logo": {
+  "coding_train": {
     "img": "assets/ct_logo.png",
-    "spacing": 40,
-    "translate": 2,
+    "spacing": 30,
     "shapes": {
       "shape1": {
         "shapeName": "kiss",
@@ -243,6 +242,76 @@
         "splitX": 0.5,
         "splitY": 0.4,
         "repeat": 5,
+        "translate": 0
+      }
+    }
+  },
+  "cubes": {
+    "img": "assets/cubes.png",
+    "spacing": 20,
+    "shapes": {
+      "shape1": {
+        "shapeName": "kiss",
+        "a": [2, 2],
+        "b": [1, 1],
+        "m": null,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.5,
+        "shapeAngle": 45,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 5,
+        "translate": 0
+      },
+      "shape2": {
+        "shapeName": "supershape",
+        "a": [1],
+        "b": [1],
+        "m": [8],
+        "n1": [1],
+        "n2": [1],
+        "n3": [1],
+        "n": 1,
+        "shapeScale": 0.5,
+        "shapeAngle": 45,
+        "splitX": 0,
+        "splitY": 0,
+        "repeat": 3,
+        "translate": 0
+      },
+      "shape3": {
+        "shapeName": "gear",
+        "a": 1,
+        "b": 2,
+        "m": 10,
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.35,
+        "shapeAngle": 0,
+        "splitX": 0.5,
+        "splitY": 0.4,
+        "repeat": 1,
+        "translate": 0
+      },
+      "shape0": {
+        "shapeName": "astroid",
+        "a": [2,2],
+        "b": [2, 2],
+        "m": [4, 4],
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": null,
+        "shapeScale": 0.25,
+        "shapeAngle": 0,
+        "splitX": 0.5,
+        "splitY": 0.4,
+        "repeat": 4,
         "translate": 0
       }
     }
@@ -442,8 +511,8 @@
       },
       "shape0": {
         "shapeName": "astroid",
-        "a": [1,1],
-        "b": [1,1],
+        "a": [1, 1],
+        "b": [1, 1],
         "m": null,
         "n1": null,
         "n2": null,
@@ -480,9 +549,9 @@
       },
       "shape2": {
         "shapeName": "flower",
-        "a": [1,3],
+        "a": [1, 3],
         "b": 0,
-        "m": [6,8],
+        "m": [6, 8],
         "n1": 0,
         "n2": 0,
         "n3": 0,
@@ -498,7 +567,7 @@
         "shapeName": "superellipse",
         "a": [1, 1],
         "b": [1, 1],
-        "m": [4,4],
+        "m": [4, 4],
         "n1": null,
         "n2": null,
         "n3": null,
@@ -512,8 +581,8 @@
       },
       "shape3": {
         "shapeName": "astroid",
-        "a": [1,1],
-        "b": [1,1],
+        "a": [1, 1],
+        "b": [1, 1],
         "m": 0,
         "n1": null,
         "n2": null,
@@ -524,6 +593,76 @@
         "splitX": 1,
         "splitY": 1,
         "repeat": 2,
+        "translate": 2
+      }
+    }
+  },
+  "peacock": {
+    "img": "assets/peacock.png",
+    "spacing": 25,
+    "shapes": {
+      "shape0": {
+        "shapeName": "arc",
+        "a": [2],
+        "b": [1],
+        "m": [6],
+        "n1": [1],
+        "n2": [1],
+        "n3": [1],
+        "n": 0.5,
+        "shapeScale": 0.45,
+        "shapeAngle": 30,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 3,
+        "translate": 2
+      },
+      "shape1": {
+        "shapeName": "heart",
+        "a": [1, 1],
+        "b": [1, 1],
+        "m": [4, 4],
+        "n1": 0,
+        "n2": 0,
+        "n3": 0,
+        "n": [4, 4],
+        "shapeScale": 0.4,
+        "shapeAngle": 180,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 2,
+        "translate": 0
+      },
+      "shape3": {
+        "shapeName": "kiss",
+        "a": [2, 1],
+        "b": [1.1, 1.1],
+        "m": [4, 4],
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0,
+        "shapeScale": 0.4,
+        "shapeAngle": 45,
+        "splitX": 0.5,
+        "splitY": 1,
+        "repeat": 4,
+        "translate": 0
+      },
+      "shape2": {
+        "shapeName": "astroid",
+        "a": [1, 1],
+        "b": [1, 1],
+        "m": [6, 8],
+        "n1": null,
+        "n2": null,
+        "n3": null,
+        "n": 0,
+        "shapeScale": 0.5,
+        "shapeAngle": 45,
+        "splitX": 0.5,
+        "splitY": 1,
+        "repeat": 1,
         "translate": 2
       }
     }
@@ -550,8 +689,8 @@
       },
       "shape1": {
         "shapeName": "astroid",
-        "a": [1,1],
-        "b": [1,1],
+        "a": [1, 1],
+        "b": [1, 1],
         "m": 0,
         "n1": 0,
         "n2": 0,
@@ -568,7 +707,7 @@
         "shapeName": "superellipse",
         "a": [1, 1],
         "b": [2, 2],
-        "m": [4,4],
+        "m": [4, 4],
         "n1": null,
         "n2": null,
         "n3": null,
@@ -582,8 +721,8 @@
       },
       "shape2": {
         "shapeName": "kiss",
-        "a": [2,2],
-        "b": [1,1],
+        "a": [2, 2],
+        "b": [1, 1],
         "m": [6, 8],
         "n1": null,
         "n2": null,
@@ -604,8 +743,8 @@
     "shapes": {
       "shape0": {
         "shapeName": "kiss",
-        "a": [2,2],
-        "b": [1,1],
+        "a": [2, 2],
+        "b": [1, 1],
         "m": 0,
         "n1": 0,
         "n2": 0,
@@ -620,8 +759,8 @@
       },
       "shape1": {
         "shapeName": "astroid",
-        "a": [1,1],
-        "b": [1,1],
+        "a": [1, 1],
+        "b": [1, 1],
         "m": 0,
         "n1": 0,
         "n2": 0,
@@ -638,7 +777,7 @@
         "shapeName": "superellipse",
         "a": [1, 1],
         "b": [2, 2],
-        "m": [4,4],
+        "m": [4, 4],
         "n1": null,
         "n2": null,
         "n3": null,
@@ -723,8 +862,8 @@
       },
       "shape0": {
         "shapeName": "astroid",
-        "a": [1,1],
-        "b": [1,1],
+        "a": [1, 1],
+        "b": [1, 1],
         "m": null,
         "n1": null,
         "n2": null,
@@ -794,8 +933,8 @@
       },
       "shape0": {
         "shapeName": "astroid",
-        "a": [1,1],
-        "b": [1,1],
+        "a": [1, 1],
+        "b": [1, 1],
         "m": null,
         "n1": null,
         "n2": null,
@@ -833,8 +972,8 @@
       "shape1": {
         "shapeName": "superellipse",
         "a": [1, 1],
-        "b": [1,1],
-        "m": [4,4],
+        "b": [1, 1],
+        "m": [4, 4],
         "n1": null,
         "n2": null,
         "n3": null,
