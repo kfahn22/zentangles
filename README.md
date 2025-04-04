@@ -40,6 +40,8 @@ I am using low resolution grayscale images -- generally around 40 pixels wide --
         "n": 1,
         "shapeScale": 0.07,
         "shapeAngle": 0,
+        "splitX": 1,
+        "splitY": 1,
         "repeat": 1,
         "translate": 0
       },
