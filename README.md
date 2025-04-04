@@ -117,11 +117,11 @@ function dataArray(img, shapes) {
 }
 ```
 
-<p align="center"><img src="examples/fish.jpg" alt="Fish zentangle" width="500px"></p>
+<p align="center"><img src="zentangle-examples/fish.jpg" alt="Fish zentangle" width="500px"></p>
 
 ## Varying the shape parameters
 
-For a lot of the shapes, the data constains an array of two values. This enables randomly varying the shape paramenters, if desired. For example, the flower shape is a f(a, m). In the rose zentangle, the flower parameters vary slightly.
+For a lot of the shapes, the data contains an array of two values. This enables randomly varying the shape paramenters, if desired. For example, the flower shape is a f(a, m). In the rose zentangle, the flower parameters vary slightly.
 
 ```JSON
         "a": [1, 3],
@@ -147,9 +147,9 @@ flower(x, y, sc, tr, aRange, mRange, angle) {
   }
   ```
 
- <p align="center"><img src="examples/rose.jpg" alt="Rose zentangle" width="500px"></p>
+ <p align="center"><img src="zentangle-examples/rose.jpg" alt="Rose zentangle" width="500px"></p>
 
- I ultimately decided that I didn't want the randomness in most of the zentangles, and hence the array contains two identical values.
+ I ultimately decided that I didn't want the randomness in most of the zentangles, and hence the parameter array contains two identical values.
 
 ## Creating the grid images
 
@@ -157,9 +157,21 @@ flower(x, y, sc, tr, aRange, mRange, angle) {
  
  I started with free cross stitch patterns, and then adapted the ones that I thought would be best suited to my use-case in [Piskel](https://www.piskelapp.com/). I stuck to simple designs, such as flowers and animals.
 
- I also uploaded some of my photos to Piskel and used as the basis to ceate some grid images. I am not sure that this method was entirely successful since it is probably hard to identify the source image, but I still think it generates a nice pattern. For example, I edited a picture of a slot canyon, and here is the zentangle.
+ I also uploaded some of my photos to Piskel and used as the basis to create some grid images. Note that it is important to change the resolution when you import the image!
+ 
+ <p align="center"><img src="examples/import-image.jpg" alt="Slot canyon zentangle" width="500px"></p>
 
- <p align="center"><img src="examples/red-rocks.jpg" alt="Slot canyon zentangle" width="500px"></p>
+ You can then use the Piskel interface to adust the grid colors.
+
+ <p align="center"><img src="examples/piskel-interface.jpg" alt="Slot canyon zentangle" width="500px"></p>
+
+ I am choosing the grayscale values based on the colors in the base image. Here I have started to edit the colors. You can learn more about using Piskel [here](https://github.com/kfahn22/Wave-Function-Collapse/wiki/Creating-a-source-image-for-the-WFC-%E2%80%90-overlapping-model).
+
+ <p align="center"><img src="examples/edited-image.jpg" alt="Slot canyon zentangle" width="500px"></p>
+
+I am not sure that this method was entirely successful since it is probably hard to identify the source image, but I still think it generates a nice pattern. For example, I edited a picture of a slot canyon, and here is the zentangle.
+
+ <p align="center"><img src="zentangle-examples/red-rocks.jpg" alt="Slot canyon zentangle" width="500px"></p>
 
 ## Resources
 
@@ -170,5 +182,3 @@ flower(x, y, sc, tr, aRange, mRange, angle) {
 - [CraftDesignOnline](https://craftdesignonline.com/pattern-grid/)
 
 - [Sunflower cross stitch pattern](https://www.lovecrafts.com/en-us/p/sunflower-in-dmc-pat0883-downloadable-pdf)
-
-- [Piskel tutorial](https://github.com/kfahn22/Wave-Function-Collapse/wiki/Creating-a-source-image-for-the-WFC-%E2%80%90-overlapping-model)
