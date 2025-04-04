@@ -1,4 +1,4 @@
-//  zentangles attempt
+//  Zentangles generator
 
 let cols, rows;
 let img;
