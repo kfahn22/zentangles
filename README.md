@@ -2,7 +2,7 @@
 
 This code creates a zentangle in p5.js by rendering shape(s) within a grid. Just as a cross-stitch is a grid of colored threads that reveal a pattern, the zentangle reveals a pattern by the choice of shapes within the grid.
 
-<p align="center"><img src="p5-zentangles-data/assets/fish.png" alt="Fish grid image" width="500px"></p>
+<p align="center"><img src="examples/fish-grid.jpg" alt="Fish grid image" width="500px"></p>
 
 ## Generating Grid Images
 
@@ -117,17 +117,23 @@ function dataArray(img, shapes) {
 
 ## Creating the grid images
 
- The images are created using several different methods. The wave function collapse model using simple grid images, which was the genesis of my idea to adapt them  to control sketch parameters.
+ The images are created using several different methods. The wave function collapse model uses simple grid images, which was the genesis of my idea to adapt them  to control sketch parameters.
  
  I started with free cross stitch patterns, and then adapted the ones that I thought would be best suited to my use case in [Piskel](https://www.piskelapp.com/). I stuck to simple designs, such as flowers and animals. 
 
- I also uploaded some of my photos to Piskel and used as the basis to ceate some grid images. I am not sure that this method was entirely successful. It is probably hard to identify the source image, but I still think it generates a nice pattern. For example, I edited a picture of a slot canyon, and here is the zentangles.
+ I also uploaded some of my photos to Piskel and used as the basis to ceate some grid images. I am not sure that this method was entirely successful since it is probably hard to identify the source image, but I still think it generates a nice pattern. For example, I edited a picture of a slot canyon, and here is the zentangles.
 
  <p align="center"><img src="examples/red-rocks.jpg" alt="Slot canyon zentangle" width="500px"></p>
 
+## Resources
 
-- [Piskel tutorial]()
+- [p5 sketch to view grid images](https://editor.p5js.org/codingtrain/sketches/_7Pa8986g)
 
 - [Wave Function Collapse images](https://github.com/CodingTrain/Wave-Function-Collapse/tree/main/p5js/overlapping-model/images)
 
 - [Sunflower cross stitch pattern](https://www.lovecrafts.com/en-us/p/sunflower-in-dmc-pat0883-downloadable-pdf)
+
+-[Piskel tutorial](https://github.com/kfahn22/Wave-Function-Collapse/wiki/Creating-a-source-image-for-the-WFC-%E2%80%90-overlapping-model)
+
+
+https://editor.p5js.org/kfahn/sketches/X3DL_LqGB
