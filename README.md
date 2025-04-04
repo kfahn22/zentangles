@@ -72,7 +72,7 @@ I am using low resolution grayscale images -- generally around 40 pixels wide --
         "n": null,
         "shapeScale": 0.5,
         "shapeAngle": -45,
-        "splitX": 1,
+        "splitX": 1, 
         "splitY": 0.5,
         "repeat": 5,
         "translate": 0
@@ -81,7 +81,7 @@ I am using low resolution grayscale images -- generally around 40 pixels wide --
   }
   ```
 
-  The dictionary contains the link to the grid image, and the shapes associated with each grid location r value. Each of the shape dictionaries contain the necessary shape parameters. The dictionary also contains additional data to control the angle and placement of the shapes within the grid location. In some cases, the zentangle looks best with the different shape rotations depending on the position of the location on the canvas (fish, butterfly). The variables "splitX" and "splitY" determine where the angles change. The variable "repeat" determines how many times the shape is rendered with the the grid location. Lastly, "translate" determines whether the shape is drawn at the center of the grid spot or randomly offset by some small delta.
+  The dictionary contains the link to the grid image, and the shapes associated with each r value. Each of the shape dictionaries contain the necessary shape parameters as well as the data to control the angle and placement of the shapes within the grid location. In some cases, the zentangle looks best with the different shape rotations depending on the position of the location on the canvas (fish, butterfly). The variables "splitX" and "splitY" determine where the angles change. The variable "repeat" determines how many times the shape is rendered with the the grid location. Lastly, "translate" determines whether the shape is drawn at the center of the grid spot or randomly offset by some small delta.
 
  The dataArray function receives the image and the array of shapes (with shape data) associated with the image. Depending on the r value of a square in the grid, the corresponding shape is added to the dataArray for a given [i,j] location in the grid. For example, if r value of the the square was 0, the assigned shape might be the kiss curve.  While it would be possible to expand beyond 4 colors, for simplicity sake that is all I am using.
 
@@ -118,6 +118,38 @@ function dataArray(img, shapes) {
 ```
 
 <p align="center"><img src="examples/fish.jpg" alt="Fish zentangle" width="500px"></p>
+
+## Varying the shape parameters
+
+For a lot of the shapes, the data constains an array of two values. This enables randomly varying the shape paramenters, if desired. For example, the flower shape is a f(a, m). In the rose zentangle, the flower parameters vary slightly.
+
+```JSON
+        "a": [1, 3],
+        "m": [6, 8],
+```
+
+```JavaScript
+flower(x, y, sc, tr, aRange, mRange, angle) {
+    let a = int(random(aRange[0], aRange[1]));
+    let m = int(random(mRange[0], mRange[1]));
+    push();
+    translate(x + random(-tr, tr), y + random(-tr, tr));
+    rotate(angle);
+    beginShape();
+    for (let theta = 0; theta < TWO_PI; theta += 0.01) {
+      let r = a + cos(m * theta);
+      let v0 = sc * r * cos(theta);
+      let v1 = sc * r * sin(theta);
+      vertex(v0, v1);
+    }
+    endShape(CLOSE);
+    pop();
+  }
+  ```
+
+ <p align="center"><img src="examples/rose.jpg" alt="Rose zentangle" width="500px"></p>
+
+ I ultimately decided that I didn't want the randomness in most of the zentangles, and hence the array contains two identical values.
 
 ## Creating the grid images
 
