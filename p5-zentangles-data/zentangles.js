@@ -7,22 +7,9 @@ class Zentangles {
     this.data = data;
   }
 
-  // determineAngle(x, y, ang) {
-  //   let angle;
-  //   if (x < width / 2 && y < height * 0.4) {
-  //     angle = ang;
-  //   } else if (x >= width / 2 && y < height * 0.4) {
-  //     angle = -ang;
-  //   } else if (x < width / 2 && y > height * 0.4) {
-  //     angle = -ang;
-  //   } else if (x >= width / 2 && y > height * 0.4) {
-  //     angle = ang;
-  //   }
-  //   return angle;
-  // }
+
   determineAngle(x, y, ang, xadj, yadj) {
     let angle;
-
     if (x < width * xadj && y < height * yadj) {
       angle = ang;
     } else if (x >= width * xadj && y < height * yadj) {
@@ -176,29 +163,7 @@ class Zentangles {
   //   }
   // }
 
-  // showLeft() {
-  //   let midC = floor(this.cols / 2);
-  //   let midR = floor(this.rows / 2);
-  //   for (let i = 0; i < midC; i++) {
-  //     for (let j = 0; j < this.rows; j++) {
-  //       let params = this.data[i][j].shape;
-  //       let choice = params.shapeName;
-  //       let n = params.repeat;
-  //       let shapeScale = params.shapeScale;
-  //       let x = i * this.spacing;
-  //       let y = j * this.spacing;
-  //       for (let k = 0; k < n; k++) {
-  //         //let a = 1 / pow(k, 0.5);
-  //         let a = 1 / exp(k / 3);
-  //         let r = a * shapeScale * this.spacing;
-  //         this.chooseShape(x, y, choice, params, r);
-  //       }
-  //     }
-  //   }
-  // }
   showUpperLeft(midC, midR) {
-    // let midC = floor(this.cols / 2);
-    // let midR = floor(this.rows / 2);
     for (let i = midC; i >=0; i--) {
       for (let j = midR; j >=0; j--) {
         let params = this.data[i][j].shape;
@@ -217,8 +182,6 @@ class Zentangles {
     }
   }
   showLowerLeft(midC, midR) {
-    // let midC = floor(this.cols / 2);
-    // let midR = floor(this.rows / 2);
     for (let i = 0; i < midC+1; i++) {
       for (let j = this.rows-1; j > midR; j--) {
         let params = this.data[i][j].shape;
@@ -236,6 +199,7 @@ class Zentangles {
       }
     }
   }
+
   showUpperRight(midC, midR) {
     for (let i = this.cols- 1; i > midC; i--) {
       for (let j = 0; j < midR+1; j++) {

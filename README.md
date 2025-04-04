@@ -81,7 +81,9 @@ I am using low resolution grayscale images -- generally around 40 pixels wide --
   }
   ```
 
- The dataArray function receives the image and the array of shapes (with shape parameters) associated with the image. Depending on the r value of a square in the grid, the corresponding shape is added to the dataArray for a given [i,j] location in the grid. For example, if r value of the the square was 0, the assigned shape might be the kiss curve.  While it would be possible to expand beyond 4 colors, for simplicity sake that is all I am using.
+  The dictionary contains the link to the grid image, and the shapes associated with each grid location r value. Each of the shape dictionaries contain the necessary shape parameters. The dictionary also contains additional data to control the angle and placement of the shapes within the grid location. In some cases, the zentangle looks best with the different shape rotations depending on the position of the location on the canvas (fish, butterfly). The variables "splitX" and "splitY" determine where the angles change. The variable "repeat" determines how many times the shape is rendered with the the grid location. Lastly, "translate" determines whether the shape is drawn at the center of the grid spot or randomly offset by some small delta.
+
+ The dataArray function receives the image and the array of shapes (with shape data) associated with the image. Depending on the r value of a square in the grid, the corresponding shape is added to the dataArray for a given [i,j] location in the grid. For example, if r value of the the square was 0, the assigned shape might be the kiss curve.  While it would be possible to expand beyond 4 colors, for simplicity sake that is all I am using.
 
 ```JavaScript
 function dataArray(img, shapes) {
@@ -137,4 +139,4 @@ function dataArray(img, shapes) {
 
 - [Sunflower cross stitch pattern](https://www.lovecrafts.com/en-us/p/sunflower-in-dmc-pat0883-downloadable-pdf)
 
--[Piskel tutorial](https://github.com/kfahn22/Wave-Function-Collapse/wiki/Creating-a-source-image-for-the-WFC-%E2%80%90-overlapping-model)
+- [Piskel tutorial](https://github.com/kfahn22/Wave-Function-Collapse/wiki/Creating-a-source-image-for-the-WFC-%E2%80%90-overlapping-model)
