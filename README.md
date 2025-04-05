@@ -1,31 +1,32 @@
 # Zentangles Generator
 
-This code creates a zentangle in p5.js by rendering shape(s) within a grid. Just as a cross-stitch is a grid of colored threads that reveal a pattern, the zentangle reveals a pattern by the choice of shapes within the grid. 
+This code creates a zentangle in p5.js by rendering shape(s) within a grid. Just as a cross-stitch is a grid of colored threads that reveal a pattern, the zentangle reveals a pattern by the choice of shapes within the grid.
 
 <p align="center"><img src="examples/fish-grid.jpg" alt="Fish grid image" width="500px"></p>
 
 ## Generating Grid Images
 
-I am using low resolution grayscale images -- generally around 40 pixels wide -- to determine which shapes are rendered in each grid location. I have a [JSON dictionary](p5-zentangles-data/data.json) that contains all of the parameters necessary to render the zentangle for each image. For example, for the fish grid, the shapes array contains "astroid", "spiral", "kiss", and "arc."  If you want to learn more about the shape options, I created a [shapes playground](https://kfahn22.github.io/shape_playground/) to experiment with the shapes.
+I am using low resolution grayscale images -- generally around 40 pixels wide -- to determine which shapes are rendered in each grid location. I have a [JSON dictionary](p5-zentangles-data/data.json) that contains all of the parameters necessary to render the zentangle for each image. For example, for the fish grid, the shapes array contains "kiss", "spiral", "arc", and "heart."  If you want to learn more about the shape options, I created a [shapes playground](https://kfahn22.github.io/shape_playground/) to experiment with the shapes.
 
 ```JSON
  "fish": {
-    "img": "assets/fish.png",
+    "img": "assets/fish1.png",
     "spacing": 40,
+    "translate": 0,
     "shapes": {
-      "shape3": {
-        "shapeName": "astroid",
-        "a": [1.4, 1.4],
-        "b": [1.2, 1.2],
-        "m": null,
+       "shape0": {
+        "shapeName": "kiss",
+        "a": [1.2, 1.2],
+        "b": [1, 1],
+        "m": 0,
         "n1": null,
         "n2": null,
         "n3": null,
         "n": null,
-        "shapeScale": 0.7,
-        "shapeAngle": 0,
-        "splitX": 0.7,
-        "splitY": 0.5,
+        "shapeScale": 0.5,
+        "shapeAngle": 145,
+        "splitX": 1,
+        "splitY": 0.55,
         "repeat": 6,
         "translate": 0
       },
@@ -38,8 +39,8 @@ I am using low resolution grayscale images -- generally around 40 pixels wide --
         "n2": 1,
         "n3": 1,
         "n": 1,
-        "shapeScale": 0.07,
-        "shapeAngle": 0,
+        "shapeScale": 0.056,
+        "shapeAngle": -6,
         "splitX": 1,
         "splitY": 1,
         "repeat": 1,
@@ -54,27 +55,27 @@ I am using low resolution grayscale images -- generally around 40 pixels wide --
         "n2": null,
         "n3": null,
         "n": 0.5,
-        "shapeScale": 0.5,
+        "shapeScale": 0.4,
         "shapeAngle": 0,
         "splitX": 0.7,
         "splitY": 0.5,
         "repeat": 2,
         "translate": 0
       },
-      "shape0": {
-        "shapeName": "kiss",
-        "a": [2, 2],
-        "b": [1, 1],
-        "m": 0,
+     "shape3": {
+        "shapeName": "heart",
+        "a": [1.4, 1.4],
+        "b": [1.2, 1.2],
+        "m": null,
         "n1": null,
         "n2": null,
         "n3": null,
         "n": null,
-        "shapeScale": 0.5,
-        "shapeAngle": -45,
-        "splitX": 1, 
-        "splitY": 0.5,
-        "repeat": 5,
+        "shapeScale": 0.4,
+        "shapeAngle": 90,
+        "splitX": 1,
+        "splitY": 1,
+        "repeat": 3,
         "translate": 0
       }
     }
